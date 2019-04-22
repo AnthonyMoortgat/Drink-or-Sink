@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SampleButton : MonoBehaviour
 {
 
-    public Button btnAddPlayer;
+    public Button btnPlayer;
     public Text txtBtnPlayer;
 
     private Player player;
@@ -15,13 +15,14 @@ public class SampleButton : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        btnAddPlayer.onClick.AddListener(HandleClick);
+        btnPlayer.onClick.AddListener(HandleClick);
     }
 
-    public void Setup(Player currentPlayer)
+    public void Setup(Player currentPlayer, PlayerHandler playerHandler)
     {
         player = currentPlayer;
-        txtBtnPlayer.text = player.Name;
+        txtBtnPlayer.text = player.name;
+        this.playerHandler = playerHandler;
     }
 
     public void HandleClick()

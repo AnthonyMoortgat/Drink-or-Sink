@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 399217570}
   m_Layer: 5
   m_Name: BtnAddPlayer
-  m_TagString: Untagged
+  m_TagString: PlayerBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1662,6 +1662,7 @@ GameObject:
   - component: {fileID: 1591246474}
   - component: {fileID: 1591246476}
   - component: {fileID: 1591246475}
+  - component: {fileID: 1591246477}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1727,6 +1728,21 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &1591246477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591246473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b00246092fad3f438fdc6cc2cd2cae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputPlayer: {fileID: 1585088647}
+  contentPanel: {fileID: 1591246474}
+  simpleObjectPool: {fileID: 1287831744}
 --- !u!1 &1683706962
 GameObject:
   m_ObjectHideFlags: 0

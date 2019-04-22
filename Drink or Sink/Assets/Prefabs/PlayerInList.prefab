@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4777323914974376983}
   - component: {fileID: 5929262405433136011}
   - component: {fileID: 2175318447266914631}
-  - component: {fileID: 3434667238169168402}
+  - component: {fileID: 650154750256826913}
   m_Layer: 5
   m_Name: PlayerInList
   m_TagString: Untagged
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &3434667238169168402
+--- !u!114 &650154750256826913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d99b209299f99f4891c8a60921efa57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnAddPlayer: {fileID: 0}
+  btnPlayer: {fileID: 5929262405433136011}
   txtBtnPlayer: {fileID: 8783469746683842115}
 --- !u!1 &5788884224333534227
 GameObject:

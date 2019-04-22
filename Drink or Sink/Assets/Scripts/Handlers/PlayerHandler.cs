@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+
+public class Player
+{
+    public string name;
+    public int lives;
+}
+
 public class PlayerHandler : MonoBehaviour
 {
     public InputField inputPlayer;
@@ -13,10 +21,15 @@ public class PlayerHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RefreshDisplay();
+    }
+    void RefreshDisplay()
+    {
         fillPlayerList();
     }
 
-    public void fillPlayerList()
+
+    private void fillPlayerList()
     {
         foreach (Transform child in contentPanel.transform)
         {
@@ -30,7 +43,8 @@ public class PlayerHandler : MonoBehaviour
             newPlayer.transform.SetParent(contentPanel);
 
             SampleButton sampleButton = newPlayer.GetComponent<SampleButton>();
-            sampleButton.Setup(player);
+            Debug.Log(sampleButton);
+            sampleButton.Setup(player, this);
         }
     }
     public void AddPlayer()
@@ -38,14 +52,15 @@ public class PlayerHandler : MonoBehaviour
         if (inputPlayer.text != "")
         {
             //Create player with parameters
-            Player player = new Player(inputPlayer.text, 3);
+            Player player = new Player();
+            player.name = inputPlayer.text;
             GameControl.control.listPlayer.Add(player);
 
             //Empty inputfield
             inputPlayer.text = "";
 
             //Refresh list
-            fillPlayerList();
+            RefreshDisplay();
         }
     }
 
@@ -59,6 +74,6 @@ public class PlayerHandler : MonoBehaviour
             }
         }
 
-        fillPlayerList();
+        RefreshDisplay();
     }
 }
