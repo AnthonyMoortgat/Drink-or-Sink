@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86333465}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 461031515}
+        m_MethodName: changeToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &86333465
@@ -462,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461031513}
   - component: {fileID: 461031514}
+  - component: {fileID: 461031515}
   m_Layer: 5
   m_Name: BtnHandler
   m_TagString: Untagged
@@ -503,6 +515,18 @@ MonoBehaviour:
   inputPlayer: {fileID: 1585088647}
   contentPanel: {fileID: 1591246474}
   simpleObjectPool: {fileID: 1287831744}
+--- !u!114 &461031515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461031512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d3cae2ef33f734884576708828be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &464406885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2362,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1915419693}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 461031515}
+        m_MethodName: changeToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1915419693
