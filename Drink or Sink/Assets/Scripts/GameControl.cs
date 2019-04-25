@@ -8,7 +8,7 @@ public class GameControl : MonoBehaviour
     public static GameControl control;
 
     public List<Player> listPlayer;
-    // public List<Challenge> listChallenges;
+    public List<Challenge> listChallenges;
 
     // Use this for initialization
     void Awake()
