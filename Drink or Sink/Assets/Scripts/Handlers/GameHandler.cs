@@ -68,6 +68,6 @@ public class GameHandler : MonoBehaviour
 
     private void endGame()
     {
-        
+        SceneManager.LoadScene(0);
     }
 }

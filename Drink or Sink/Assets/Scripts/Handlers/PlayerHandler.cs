@@ -54,6 +54,7 @@ public class PlayerHandler : MonoBehaviour
             //Create player with parameters
             Player player = new Player();
             player.name = inputPlayer.text;
+            player.lives = 3;
             GameControl.control.listPlayer.Add(player);
 
             //Empty inputfield

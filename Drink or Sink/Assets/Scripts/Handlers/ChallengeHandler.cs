@@ -61,6 +61,14 @@ public class ChallengeHandler : MonoBehaviour
         }
     }
 
+    public void AddChallenge(string title)
+    {
+        //Create player with parameters
+        Challenge challenge = new Challenge();
+        challenge.title = title;
+        GameControl.control.listChallenges.Add(challenge);
+    }
+
     public void RemoveChallenge(Challenge challenge)
     {
         for (int i = GameControl.control.listChallenges.Count - 1; i >= 0; i--)
